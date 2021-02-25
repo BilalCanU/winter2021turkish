@@ -26,7 +26,12 @@ public class C8_IfElseDenme {
 		
 		if (ev<=50000 || maas<=500) {
 			System.out.println("Lütfen Geçerli bir Deðer giriniz...");
-		} else if (aySayýsý<12) {
+		} else if (ev==0 && maas==0) {
+			ev++;
+			maas++;
+			System.out.println("Lütfen Geçerli bir Deðer giriniz...");
+		}
+		  else if (aySayýsý<12) {
 			System.out.println("Uygun faizli");
 			System.out.println("Odeyecegýnýz ay sayýsý : " + aySayýsý);
 		} else if (aySayýsý<36){
